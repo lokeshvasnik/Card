@@ -1,0 +1,87 @@
+/* Google font */
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Cream: hsl(30, 38%, 92%);
+  --Dark-cyan: hsl(158, 36%, 37%);
+  --Dark-grayish-blue: hsl(228, 12%, 48%);
+  --Very-dark-blue: hsl(212, 21%, 14%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  background-color: var(--Cream);
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10%;
+}
+
+h1 {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+}
+
+h2 {
+  color: var(--Dark-grayish-blue);
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+p {
+  color: var(--Dark-grayish-blue);
+  font-size: 0.875rem;
+}
+
+span {
+  color: var(--Dark-grayish-blue);
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  margin-left: 16px;
+}
+
+/* Styles */
+
+.left__img {
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  width: 100%;
+}
+
+.box {
+  background-color: #fff;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  padding: 40px 35px;
+}
+
+.price {
+  color: var(--Dark-cyan);
+}
+
+.btn__cart {
+  background-color: var(--Dark-cyan);
+  color: white;
+}
+
+.btn:hover {
+  background-color: var(--Dark-cyan) !important;
+  color: white !important;
+}
+
+
+
+@media (max-width: 1100px){
+    .left__img {
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+    }
+
+    .row{
+        width: 100% !important;
+    }
+}
